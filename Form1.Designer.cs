@@ -39,6 +39,7 @@
             this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
             this.progressBar1 = new System.Windows.Forms.ProgressBar();
             this.button1 = new System.Windows.Forms.Button();
+            this.размытиеToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
@@ -105,9 +106,12 @@
             // 
             // иатричныеToolStripMenuItem
             // 
+            this.иатричныеToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.размытиеToolStripMenuItem});
             this.иатричныеToolStripMenuItem.Name = "иатричныеToolStripMenuItem";
-            this.иатричныеToolStripMenuItem.Size = new System.Drawing.Size(137, 22);
-            this.иатричныеToolStripMenuItem.Text = "Иатричные";
+            this.иатричныеToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.иатричныеToolStripMenuItem.Text = "Матричные";
+            this.иатричныеToolStripMenuItem.Click += new System.EventHandler(this.иатричныеToolStripMenuItem_Click);
             // 
             // backgroundWorker1
             // 
@@ -133,6 +137,13 @@
             this.button1.Text = "Отмена";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // размытиеToolStripMenuItem
+            // 
+            this.размытиеToolStripMenuItem.Name = "размытиеToolStripMenuItem";
+            this.размытиеToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.размытиеToolStripMenuItem.Text = "Размытие";
+            this.размытиеToolStripMenuItem.Click += new System.EventHandler(this.размытиеToolStripMenuItem_Click);
             // 
             // Form1
             // 
@@ -167,6 +178,7 @@
         private System.ComponentModel.BackgroundWorker backgroundWorker1;
         private System.Windows.Forms.ProgressBar progressBar1;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.ToolStripMenuItem размытиеToolStripMenuItem;
     }
 }
 

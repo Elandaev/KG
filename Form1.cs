@@ -74,5 +74,16 @@ namespace WindowsFormsApp1
         {
             backgroundWorker1.CancelAsync();
         }
+
+        private void иатричныеToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void размытиеToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Filters filter = new BlurFilter();
+            backgroundWorker1.RunWorkerAsync(filter);
+        }
     }
 }
