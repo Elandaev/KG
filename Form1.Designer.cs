@@ -41,6 +41,7 @@
             this.button1 = new System.Windows.Forms.Button();
             this.размытиеToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.гаусовскаяToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.вОттенкахСерогоToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
@@ -93,7 +94,8 @@
             // точечныеToolStripMenuItem
             // 
             this.точечныеToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.инверсияToolStripMenuItem});
+            this.инверсияToolStripMenuItem,
+            this.вОттенкахСерогоToolStripMenuItem});
             this.точечныеToolStripMenuItem.Name = "точечныеToolStripMenuItem";
             this.точечныеToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.точечныеToolStripMenuItem.Text = "Точечные";
@@ -154,6 +156,13 @@
             this.гаусовскаяToolStripMenuItem.Text = "Гаусовская";
             this.гаусовскаяToolStripMenuItem.Click += new System.EventHandler(this.гаусовскаяToolStripMenuItem_Click);
             // 
+            // вОттенкахСерогоToolStripMenuItem
+            // 
+            this.вОттенкахСерогоToolStripMenuItem.Name = "вОттенкахСерогоToolStripMenuItem";
+            this.вОттенкахСерогоToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.вОттенкахСерогоToolStripMenuItem.Text = "В оттенках серого";
+            this.вОттенкахСерогоToolStripMenuItem.Click += new System.EventHandler(this.вОттенкахСерогоToolStripMenuItem_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -189,6 +198,7 @@
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.ToolStripMenuItem размытиеToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem гаусовскаяToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem вОттенкахСерогоToolStripMenuItem;
     }
 }
 

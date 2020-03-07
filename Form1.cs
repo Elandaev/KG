@@ -91,5 +91,11 @@ namespace WindowsFormsApp1
             Filters filter = new GaussFilter();
             backgroundWorker1.RunWorkerAsync(filter);
         }
+
+        private void вОттенкахСерогоToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Filters filter = new GrayScale();
+            backgroundWorker1.RunWorkerAsync(filter);
+        }
     }
 }
