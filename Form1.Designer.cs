@@ -40,6 +40,7 @@
             this.progressBar1 = new System.Windows.Forms.ProgressBar();
             this.button1 = new System.Windows.Forms.Button();
             this.размытиеToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.гаусовскаяToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
@@ -107,7 +108,8 @@
             // иатричныеToolStripMenuItem
             // 
             this.иатричныеToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.размытиеToolStripMenuItem});
+            this.размытиеToolStripMenuItem,
+            this.гаусовскаяToolStripMenuItem});
             this.иатричныеToolStripMenuItem.Name = "иатричныеToolStripMenuItem";
             this.иатричныеToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.иатричныеToolStripMenuItem.Text = "Матричные";
@@ -145,6 +147,13 @@
             this.размытиеToolStripMenuItem.Text = "Размытие";
             this.размытиеToolStripMenuItem.Click += new System.EventHandler(this.размытиеToolStripMenuItem_Click);
             // 
+            // гаусовскаяToolStripMenuItem
+            // 
+            this.гаусовскаяToolStripMenuItem.Name = "гаусовскаяToolStripMenuItem";
+            this.гаусовскаяToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.гаусовскаяToolStripMenuItem.Text = "Гаусовская";
+            this.гаусовскаяToolStripMenuItem.Click += new System.EventHandler(this.гаусовскаяToolStripMenuItem_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -179,6 +188,7 @@
         private System.Windows.Forms.ProgressBar progressBar1;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.ToolStripMenuItem размытиеToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem гаусовскаяToolStripMenuItem;
     }
 }
 

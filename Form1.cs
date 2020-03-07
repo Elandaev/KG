@@ -85,5 +85,11 @@ namespace WindowsFormsApp1
             Filters filter = new BlurFilter();
             backgroundWorker1.RunWorkerAsync(filter);
         }
+
+        private void гаусовскаяToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Filters filter = new GaussFilter();
+            backgroundWorker1.RunWorkerAsync(filter);
+        }
     }
 }
