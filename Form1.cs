@@ -24,7 +24,7 @@ namespace WindowsFormsApp1
         {
 
         }
-
+        
         private void открытьToolStripMenuItem_Click(object sender, EventArgs e)
         {
             OpenFileDialog dialog = new OpenFileDialog();
@@ -44,7 +44,7 @@ namespace WindowsFormsApp1
 
         private void инверсияToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            InvertFilter filter = new InvertFilter();
+            Filters filter = new InvertFilter();
             backgroundWorker1.RunWorkerAsync(filter);
         }
 
