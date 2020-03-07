@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Drawing;
+using System.ComponentModel;
 
 namespace WindowsFormsApp1
 {
@@ -18,11 +19,14 @@ namespace WindowsFormsApp1
                 return max;
             return value;
         }
-        public Bitmap processImage(Bitmap sourceImage)
+        public Bitmap processImage(Bitmap sourceImage, BackgroundWorker worker)
         {
             Bitmap resultImages = new Bitmap(sourceImage.Width, sourceImage.Height);
             for(int i = 0; i < sourceImage.Width; i++)
             {
+                worker.ReportProgress((int)((float)i / resultImages.Width * 100));
+                if (worker.CancellationPending)
+                    return null;
                 for(int j = 0; j < sourceImage.Height; j++)
                 {
                     resultImages.SetPixel(i, j, calculateNewPixelColor(sourceImage, i, j));
