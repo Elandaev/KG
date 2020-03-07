@@ -41,5 +41,13 @@ namespace WindowsFormsApp1
         {
 
         }
+
+        private void инверсияToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            InvertFilter filter = new InvertFilter();
+            Bitmap resultImages = filter.processImage(image);
+            pictureBox1.Image = resultImages;
+            pictureBox1.Refresh();
+        }
     }
 }
