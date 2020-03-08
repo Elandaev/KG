@@ -24,16 +24,16 @@ namespace WindowsFormsApp1
             float resultR = 0;
             float resultG = 0;
             float resultB = 0;
-            for(int i=0; i < radiusY; i++)
+            for(int i=-radiusY; i < radiusY; i++)
             {
                 for(int j=-radiusX; j <= radiusX; j++)
                 {
                     int idX = Clamp(x + j, 0, SourceImage.Width - 1);
                     int idY = Clamp(y + i, 0, SourceImage.Height - 1);
                     Color neighborColor = SourceImage.GetPixel(idX, idY);
-                    resultR += neighborColor.R * kernel[y + radiusX, i + radiusY];
-                    resultG += neighborColor.G * kernel[y + radiusX, i + radiusY];
-                    resultB += neighborColor.B * kernel[y + radiusX, i + radiusY];
+                    resultR += neighborColor.R * kernel[j + radiusX, i + radiusY];
+                    resultG += neighborColor.G * kernel[j + radiusX, i + radiusY];
+                    resultB += neighborColor.B * kernel[j + radiusX, i + radiusY];
                 }
             }
             return Color.FromArgb(Clamp((int)resultR, 0, 255), Clamp((int)resultG,0,255),Clamp((int)resultB,0,255));
