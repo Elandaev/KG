@@ -43,6 +43,7 @@
             this.progressBar1 = new System.Windows.Forms.ProgressBar();
             this.button1 = new System.Windows.Forms.Button();
             this.сепияToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.резкостьToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
@@ -120,7 +121,8 @@
             // 
             this.иатричныеToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.размытиеToolStripMenuItem,
-            this.гаусовскаяToolStripMenuItem});
+            this.гаусовскаяToolStripMenuItem,
+            this.резкостьToolStripMenuItem});
             this.иатричныеToolStripMenuItem.Name = "иатричныеToolStripMenuItem";
             this.иатричныеToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.иатричныеToolStripMenuItem.Text = "Матричные";
@@ -172,6 +174,13 @@
             this.сепияToolStripMenuItem.Text = "Сепия";
             this.сепияToolStripMenuItem.Click += new System.EventHandler(this.сепияToolStripMenuItem_Click);
             // 
+            // резкостьToolStripMenuItem
+            // 
+            this.резкостьToolStripMenuItem.Name = "резкостьToolStripMenuItem";
+            this.резкостьToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.резкостьToolStripMenuItem.Text = "Резкость";
+            this.резкостьToolStripMenuItem.Click += new System.EventHandler(this.резкостьToolStripMenuItem_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -209,6 +218,7 @@
         private System.Windows.Forms.ToolStripMenuItem гаусовскаяToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem вОттенкахСерогоToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem сепияToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem резкостьToolStripMenuItem;
     }
 }
 

@@ -103,5 +103,11 @@ namespace WindowsFormsApp1
             Filters filter = new SepiaFilter();
             backgroundWorker1.RunWorkerAsync(filter);
         }
+
+        private void резкостьToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Filters filter = new SharpnessFilter();
+            backgroundWorker1.RunWorkerAsync(filter);
+        }
     }
 }
