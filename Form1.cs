@@ -24,7 +24,7 @@ namespace WindowsFormsApp1
         {
 
         }
-
+        
         private void открытьToolStripMenuItem_Click(object sender, EventArgs e)
         {
             OpenFileDialog dialog = new OpenFileDialog();
@@ -44,7 +44,7 @@ namespace WindowsFormsApp1
 
         private void инверсияToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            InvertFilter filter = new InvertFilter();
+            Filters filter = new InvertFilter();
             backgroundWorker1.RunWorkerAsync(filter);
         }
 
@@ -73,6 +73,35 @@ namespace WindowsFormsApp1
         private void button1_Click(object sender, EventArgs e)
         {
             backgroundWorker1.CancelAsync();
+        }
+
+        private void иатричныеToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void размытиеToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Filters filter = new BlurFilter();
+            backgroundWorker1.RunWorkerAsync(filter);
+        }
+
+        private void гаусовскаяToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Filters filter = new GaussFilter();
+            backgroundWorker1.RunWorkerAsync(filter);
+        }
+
+        private void вОттенкахСерогоToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Filters filter = new GrayScale();
+            backgroundWorker1.RunWorkerAsync(filter);
+        }
+
+        private void сепияToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Filters filter = new SepiaFilter();
+            backgroundWorker1.RunWorkerAsync(filter);
         }
     }
 }
