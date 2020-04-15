@@ -109,5 +109,47 @@ namespace WindowsFormsApp1
             Filters filter = new SharpnessFilter();
             backgroundWorker1.RunWorkerAsync(filter);
         }
+
+        private void медианныйToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Filters filter = new MedianFilter();
+            backgroundWorker1.RunWorkerAsync(filter);
+        }
+
+        private void волныToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Filters filter = new WavesFilter();
+            backgroundWorker1.RunWorkerAsync(filter);
+        }
+
+        private void dilationToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Filters filter = new Dilation();
+            backgroundWorker1.RunWorkerAsync(filter);
+        }
+
+        private void erosionToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Filters filter = new Erosion();
+            backgroundWorker1.RunWorkerAsync(filter);
+        }
+
+        private void openingToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            Filters filter = new Opening();
+            backgroundWorker1.RunWorkerAsync(filter);
+        }
+
+        private void closingToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            Filters filter = new Closing();
+            backgroundWorker1.RunWorkerAsync(filter);
+        }
+
+        private void серыйМирToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Filters filter = new GreyWordFilter();
+            backgroundWorker1.RunWorkerAsync(filter);
+        }
     }
 }

@@ -16,3 +16,13 @@ C:\Users\8\Desktop\git\KG\obj\Debug\WindowsFormsApp1.Properties.Resources.resour
 C:\Users\8\Desktop\git\KG\obj\Debug\WindowsFormsApp1.csproj.GenerateResource.cache
 C:\Users\8\Desktop\git\KG\obj\Debug\WindowsFormsApp1.exe
 C:\Users\8\Desktop\git\KG\obj\Debug\WindowsFormsApp1.pdb
+C:\Users\1\Desktop\Git\KG\bin\Debug\WindowsFormsApp1.exe.config
+C:\Users\1\Desktop\Git\KG\bin\Debug\WindowsFormsApp1.exe
+C:\Users\1\Desktop\Git\KG\bin\Debug\WindowsFormsApp1.pdb
+C:\Users\1\Desktop\Git\KG\obj\Debug\WindowsFormsApp1.csprojAssemblyReference.cache
+C:\Users\1\Desktop\Git\KG\obj\Debug\WindowsFormsApp1.Form1.resources
+C:\Users\1\Desktop\Git\KG\obj\Debug\WindowsFormsApp1.Properties.Resources.resources
+C:\Users\1\Desktop\Git\KG\obj\Debug\WindowsFormsApp1.csproj.GenerateResource.cache
+C:\Users\1\Desktop\Git\KG\obj\Debug\WindowsFormsApp1.csproj.CoreCompileInputs.cache
+C:\Users\1\Desktop\Git\KG\obj\Debug\WindowsFormsApp1.exe
+C:\Users\1\Desktop\Git\KG\obj\Debug\WindowsFormsApp1.pdb
